@@ -1,0 +1,22 @@
+meta {
+  name: Add
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{url}}/book
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "Id": 1,
+    "Title": "Test",
+    "Author": "Test",
+    "Isbn": {
+      "Value": "Test"
+    }
+  }
+}
